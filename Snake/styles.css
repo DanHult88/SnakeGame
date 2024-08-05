@@ -1,0 +1,14 @@
+canvas {
+    background-color: #000;
+    display: block;
+    margin: 0 auto;
+}
+
+#menu, #gameOverScreen {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#instructions, #highscore, #gameCanvas {
+    display: none;
+}

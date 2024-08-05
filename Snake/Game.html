@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Snake Game</h1>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="showInstructions()">Instructions</button>
+        <button onclick="showHighscore()">Highscore</button>
+    </div>
+
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <p>Use arrow keys to move the snake.</p>
+        <p>Eat the food to grow. Don't hit the walls or yourself!</p>
+        <button onclick="backToMenu()">Back to Menu</button>
+    </div>
+
+    <div id="highscore">
+        <h2>Highscore</h2>
+        <div id="scoreList"></div>
+        <button onclick="backToMenu()">Back to Menu</button>
+    </div>
+
+    <div id="gameOverScreen">
+        <h2>Game Over</h2>
+        <p>Your Score: <span id="finalScore"></span></p>
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <button onclick="saveHighscore()">Save Highscore</button>
+        <button onclick="startGame()">Retry</button>
+        <button onclick="backToMenu()">Exit</button>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <script src="Snake.js"></script>
+</body>
+</html>
